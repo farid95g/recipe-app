@@ -2,7 +2,7 @@ import React from "react";
 
 const Recipe = ({ title, calories, image, ingredients }) => {
   return (
-    <div>
+    <div className="recipe">
       <h1>{title}</h1>
       <ol>
         {ingredients.map(ingredient => (
@@ -10,7 +10,7 @@ const Recipe = ({ title, calories, image, ingredients }) => {
         ))}
       </ol>
       <p>{calories}</p>
-      <img src={image} alt="" />
+      <img className="image" src={image} alt="" />
     </div>
   )
 }
